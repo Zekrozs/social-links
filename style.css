@@ -1,0 +1,92 @@
+
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;}
+body{
+width: 100vw;
+height: 100vh;
+display: flex; justify-content: center; align-items: center; flex-direction: row;
+background-color: var(--dark-grey); color: var(--white);
+font-family: 'Inter', sans-serif;
+
+}
+
+/*color variables*/
+:root{
+  --dark-grey: hsl(0, 0%, 8%); 
+  --grey: hsl(0, 0%, 12%);
+--light-grey: hsl(0, 0%, 20%);
+--green: hsl(75, 94%, 57%);
+--white: hsl(0, 0%, 100%);}
+
+a{text-decoration: none; color: var(--white); width: 100%; }
+
+img{max-width: 100%;}
+
+ul{list-style-type: none;}
+
+
+.avatar{width: 100%;     
+  height: auto;
+   object-fit: cover; ;}
+
+.avatar .avatar-img{border-radius: 6em;
+ width: 25vw;
+  object-fit: cover;
+  display: block; 
+  margin-inline-start: 5em;
+margin-block: 1.1em 1.7em; 
+}
+
+.avatar .name{font-weight: 500; margin-block-end: 0.5em;}
+
+.avatar .adrss{color: var(--green); font-weight: 700;
+margin-block-end: 2em;}
+
+.hed .hobbies{opacity: 0.7; margin-block-end: 2em;}
+
+
+
+.links .link-list{
+   
+
+line-height: 2.9em;
+}
+
+.link-list li{background-color: var(--light-grey);
+     object-fit: contain;
+      text-align: center; 
+      margin-block-end: 1em; border-radius: 0.5em;
+     width: 75vw; display: block;}
+
+
+.attribution{margin-block-start: 1em;}
+
+
+
+
+
+/*utility classes*/
+
+.container{padding-inline: 1.4em;
+max-width: 100%;}
+
+/*card*/
+
+.card{background-color: var(--grey);
+border-radius: 0.8em; display: flex; flex-direction: column; 
+justify-content: center; align-items: center; padding-block: 0.5em;
+
+width: 88vw;}
+
+
+/*text classes*/
+.text-xl{
+ font-size: 1.5em;
+}
+
+.text-md{font-size: 0.9em;}
+
+.text-lrg{font-size: 0.9em; font-weight: 700;}
+
+.text-center{text-align: center;}
