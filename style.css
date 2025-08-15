@@ -17,7 +17,13 @@ font-family: 'Inter', sans-serif;
   --grey: hsl(0, 0%, 12%);
 --light-grey: hsl(0, 0%, 20%);
 --green: hsl(75, 94%, 57%);
---white: hsl(0, 0%, 100%);}
+--white: hsl(0, 0%, 100%); 
+--github: hsl(0, 0%, 34%) ;
+--frontend: hsl(0, 0%, 84%) ;
+--linkedin: hsl(227, 80%, 53%) ;
+--twitter: hsl(197, 88%, 62%) ;
+--instagram: hsl(336, 74%, 56%) ;
+}
 
 a{text-decoration: none; color: var(--white); width: 100%; }
 
@@ -49,11 +55,10 @@ margin-block-end: 2em;}
 
 .links .link-list{
    
-
 line-height: 2.9em;
 }
 
-.link-list li{background-color: var(--light-grey);
+.link-list a{background-color: var(--light-grey);
      object-fit: contain;
       text-align: center; 
       margin-block-end: 1em; border-radius: 0.5em;
@@ -62,8 +67,11 @@ line-height: 2.9em;
 
 .attribution{margin-block-start: 1em;}
 
-
-
+.link-list .github:active{color: var(--github);}
+.link-list .Mentor:active{color: var(--frontend);}
+.link-list .linkedin:active{color: var(--linkedin);}
+.link-list .twitter:active{color: var(--twitter);}
+.link-list .instagram:active{color: var(--instagram);}
 
 
 /*utility classes*/
