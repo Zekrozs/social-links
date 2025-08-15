@@ -11,6 +11,9 @@ font-family: 'Inter', sans-serif;
 
 }
 
+
+
+
 /*color variables*/
 :root{
   --dark-grey: hsl(0, 0%, 8%); 
@@ -38,6 +41,8 @@ ul{list-style-type: none;}
 
 .avatar .avatar-img{border-radius: 6em;
  width: 25vw;
+ max-width: 7rem;
+ min-width: 2rem;
   object-fit: cover;
   display: block; 
   margin-inline-start: 5em;
@@ -55,14 +60,18 @@ margin-block-end: 2em;}
 
 .links .link-list{
    
-line-height: 2.9em;
+line-height: 3em; 
+
 }
 
 .link-list a{background-color: var(--light-grey);
      object-fit: contain;
       text-align: center; 
       margin-block-end: 1em; border-radius: 0.5em;
-     width: 75vw; display: block;}
+     width: 75vw;
+    
+     max-width: 19rem
+     ; display: block;}
 
 
 .attribution{margin-block-start: 1em;}
@@ -72,6 +81,8 @@ line-height: 2.9em;
 .link-list .linkedin:active{color: var(--linkedin);}
 .link-list .twitter:active{color: var(--twitter);}
 .link-list .instagram:active{color: var(--instagram);}
+
+
 
 
 /*utility classes*/
@@ -85,7 +96,8 @@ max-width: 100%;}
 border-radius: 0.8em; display: flex; flex-direction: column; 
 justify-content: center; align-items: center; padding-block: 0.5em;
 
-width: 88vw;}
+width: 88vw; 
+max-width: 30rem ;}
 
 
 /*text classes*/
@@ -98,3 +110,32 @@ width: 88vw;}
 .text-lrg{font-size: 0.9em; font-weight: 700;}
 
 .text-center{text-align: center;}
+
+@media screen and (min-width: 601px) {
+  
+
+  
+  .card {
+    width: 40vw;
+    min-width: 23rem;
+    max-width: 25rem;/* More compact card layout */
+   
+  }
+
+
+  .text-xl{
+ font-size: 1.3em;
+}
+  .text-md{font-size: 0.7em;}
+
+.text-lrg{font-size: 0.7em; font-weight: 600;}
+
+.text-center{text-align: center;}
+
+.avatar .avatar-img{margin-inline-end: 5rem;}
+.link-list a{margin-block-end: 1.3em;}
+
+.link-list a:hover{background-color: rgba(137, 137, 137, 0.438);}
+
+}
+
